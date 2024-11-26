@@ -57,8 +57,7 @@ img {
 }
 
 .hero {
-  padding: 65px 0;
-  height: 350px;
+  padding: 120px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../image/hero-background.jpg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3)), url(../image/hero-background.jpg);
   background-size: cover;
@@ -67,13 +66,12 @@ img {
 }
 @media screen and (max-width: 1200px) {
   .hero {
-    height: 250px;
     background-position-y: 0px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero {
-    padding: 20px;
+    padding: 68px 0;
   }
 }
 
@@ -116,12 +114,13 @@ img {
 
 .shuttle {
   padding: 240px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../image/shuttle-background.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), url(../image/shuttle-background.jpg);
-  background-color: #003D26;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../image/shuttle-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)), url(../image/shuttle-background.jpg);
+  background-color: #000f09;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-bottom: solid 1px #F9A825;
 }
 @media screen and (min-width: 1200px) {
   .shuttle {
@@ -133,10 +132,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  width: 485px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 768px) {
+  .shuttle-texts {
+    width: 100%;
+    padding: 0 16px;
+  }
 }
 
 .shuttle-title {
@@ -148,14 +155,61 @@ img {
 
 .shuttle-desc {
   text-align: center;
-  font-size: 24px;
+  font-size: 16px;
+  color: #F8F8F2;
+}
+
+.food {
+  padding: 240px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../image/food-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)), url(../image/food-background.jpg);
+  background-color: #000f09;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: solid 1px #F9A825;
+}
+@media screen and (min-width: 1200px) {
+  .food {
+    background-size: contain;
+  }
+}
+
+.food-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 485px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (max-width: 768px) {
+  .food-texts {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+.food-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  color: #F8F8F2;
+}
+
+.food-desc {
+  text-align: center;
+  font-size: 16px;
   color: #F8F8F2;
 }
 
 .footer {
   text-align: center;
-  padding: 20px;
-  background-color: #003D26;
+  padding: 10px 0;
+  background-color: #000f09;
 }
 
 .footer-logo {
@@ -185,6 +239,11 @@ img {
 .footer-person:hover, .footer-person:focus {
   opacity: 1;
 }
+@media (hover: none) {
+  .footer-person {
+    opacity: 1;
+  }
+}
 
 .footer-form {
   display: -webkit-box;
@@ -201,10 +260,10 @@ img {
 }
 
 .footer-input {
-  max-width: 480px;
+  max-width: 420px;
   width: 100%;
   padding: 15px 16px;
-  background-color: #003D26;
+  background-color: #000f09;
   border-radius: 4px;
   border: solid 1px #F8F8F2;
   color: #F8F8F2;
