@@ -11,3 +11,19 @@
         background-size: contain;
     }
 }
+.events-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+    color: $cream-color;
+}
+.events-desc {
+    text-align: center;
+    font-size: 16px;
+    color: $cream-color;
+}
+.events-button {
+    border: none;
+    border-radius: 4px;
+    background-color: $accent-color;
+}

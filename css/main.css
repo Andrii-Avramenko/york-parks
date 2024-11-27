@@ -112,6 +112,41 @@ img {
   color: #fff;
 }
 
+.time {
+  padding: 240px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../image/backgrounds/time-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6)), url(../image/backgrounds/time-background.jpg);
+  background-color: #000f09;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: solid 1px #F9A825;
+}
+@media screen and (min-width: 1200px) {
+  .time {
+    background-size: contain;
+  }
+}
+
+.events-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  color: #F8F8F2;
+}
+
+.events-desc {
+  text-align: center;
+  font-size: 16px;
+  color: #F8F8F2;
+}
+
+.events-button {
+  border: none;
+  border-radius: 4px;
+  background-color: #F9A825;
+}
+
 .shuttle {
   padding: 240px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url(../image/backgrounds/shuttle-background.jpg);
