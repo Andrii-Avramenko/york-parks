@@ -1,3 +1,12 @@
+.footer-sub, .events-button, .hero-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F9A825;
+  font-size: 20px;
+  color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -56,6 +65,13 @@ img {
   max-width: 100%;
 }
 
+.header {
+  position: fixed;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(0), color-stop(0), to(0.5));
+  background-image: linear-gradient(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+
 .hero {
   padding: 120px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url(../image/backgrounds/hero-background.jpg);
@@ -103,19 +119,10 @@ img {
   }
 }
 
-.hero-button {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 4px;
-  background-color: #F9A825;
-  font-size: 20px;
-  color: #fff;
-}
-
-.time {
+.events {
   padding: 240px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../image/backgrounds/time-background.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6)), url(../image/backgrounds/time-background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url(../image/backgrounds/events-background.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6)), url(../image/backgrounds/events-background.jpg);
   background-color: #000f09;
   background-size: cover;
   background-position: center;
@@ -123,28 +130,33 @@ img {
   border-bottom: solid 1px #F9A825;
 }
 @media screen and (min-width: 1200px) {
-  .time {
+  .events {
     background-size: contain;
   }
 }
 
+.events-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .events-title {
-  text-align: center;
-  margin-bottom: 24px;
   font-size: 32px;
   color: #F8F8F2;
 }
 
 .events-desc {
-  text-align: center;
+  margin: 24px 0;
   font-size: 16px;
   color: #F8F8F2;
-}
-
-.events-button {
-  border: none;
-  border-radius: 4px;
-  background-color: #F9A825;
 }
 
 .shuttle {
@@ -307,6 +319,25 @@ img {
   padding: 10px 0;
   background-color: #000f09;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .footer-logo {
   font-family: lexend, sans-serif;
@@ -341,6 +372,11 @@ img {
   }
 }
 
+.footer-signup {
+  display: block;
+  float: right;
+}
+
 .footer-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,14 +398,5 @@ img {
   background-color: #000f09;
   border-radius: 4px;
   border: solid 1px #F8F8F2;
-  color: #F8F8F2;
-}
-
-.footer-sub {
-  padding: 15px 25px;
-  border-radius: 4px;
-  font-size: 16px;
-  border: 0;
-  background-color: #F9A825;
   color: #F8F8F2;
 }
