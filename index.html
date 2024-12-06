@@ -16,7 +16,15 @@
 
 <body>
   <header class="header">
-    <div class="container"></div>
+    <div class="container header-content">
+      <p class="logo">York Parks</p>
+      <ul class="header-list">
+        <li class="header-item"><a href="./rides.html">Rides</a></li>
+        <li class="header-item"><a href="./aboutus.html">About Us</a></li>
+        <li class="header-item"><a href="#"></a></li>
+      </ul>
+      <button type="button" class="header-button">Buy Tickets</button>
+    </div>
   </header>
   <main>
     <section class="hero">
@@ -74,7 +82,7 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-main">
-        <a href="./index.html" class="footer-logo">York Parks</a>
+        <a href="./index.html" class="logo">York Parks</a>
         <h2 class="footer-title">Credits:</h2>
         <ul class="footer-credits">
           <li class="footer-person">Andrii <a href="mailto:andrii2@ourcloud.buzz">(andrii2@ourcloud.buzz)</a></li>
@@ -86,14 +94,15 @@
       <div class="footer-signup">
         <p class="footer-title">Subscribe for future news</p>
         <form action="" class="footer-form">
-          <input type="email" name="email" id="" class="footer-input" placeholder="E-mail" required>
-          <button type="submit" class="footer-sub">
+          <input type="email" name="email" id="signup-input" class="footer-input" placeholder="E-mail" required>
+          <button type="submit" onclick="sign(email)" class="footer-sub" id="signup-button">
             Subscribe
           </button>
         </form>
       </div>
     </div>
   </footer>
+  <script src="./js/signup.js"></script>
 </body>
 
 </html>

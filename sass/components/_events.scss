@@ -1,15 +1,6 @@
 .events {
-    padding: 240px 0;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6)), url(../image/backgrounds/events-background.jpg);
-    background-color: $dark-green-bg;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-bottom: solid 1px $accent-color;
-
-    @media screen and (min-width: $desktop) {
-        background-size: contain;
-    }
+    @extend %section;
 }
 .events-content {
     display: flex;

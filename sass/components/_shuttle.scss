@@ -1,15 +1,6 @@
 .shuttle {
-    padding: 240px 0;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)), url(../image/backgrounds/shuttle-background.jpg);
-    background-color: $dark-green-bg;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-bottom: solid 1px $accent-color;
-
-    @media screen and (min-width: $desktop) {
-        background-size: contain;
-    }
+    @extend %section;
 }
 .shuttle-texts {
     display: flex;
