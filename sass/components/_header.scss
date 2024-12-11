@@ -20,11 +20,13 @@
 .header-list {
     display: flex;
     gap: 35px;
+
+    
 }
 .header-item a {
     color: $accent-color;
     opacity: 0.7;
-
+    
     @media (hover:none) {
         opacity: 1;
     }
