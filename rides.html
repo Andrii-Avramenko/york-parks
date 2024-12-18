@@ -23,7 +23,7 @@
                 <li class="header-item"><a href="./aboutus.html">About Us</a></li>
                 <li class="header-item"><a href="#"></a></li>
             </ul>
-            <button type="button" class="header-button">Buy Tickets</button>
+            <button type="button" class="header-button" data-modal-open>Buy Tickets</button>
         </div>
     </header>
     <main>
@@ -54,7 +54,37 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close></button>
+            <h2 class="modal-heading">Buy Tickets</h2>
+            <ul class="form">
+                <li class="form-item">
+                    <input type="radio" class="form-input">
+                    <div class="form-text">
+                        <h2 class="form-tichead">Adult Ticket - £32</h2>
+                        <p class="form-desc">For over 16 years old</p>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <input type="radio" class="form-input">
+                    <div class="form-text">
+                        <h2 class="form-tichead">Children - £12</h2>
+                        <p class="form-desc">Under 15 years old. Children under 0.9m receive free entry</p>
+                    </div>
+                </li>
+                <li class="form-item">
+                    <input type="radio" class="form-input">
+                    <div class="form-text">
+                        <h2 class="form-tichead">24 Hours Anytime Entry Adult - £52</h2>
+                        <p class="form-desc">Entry anytime in the day only for £52, over 16 years old only</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="./js/signup.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
