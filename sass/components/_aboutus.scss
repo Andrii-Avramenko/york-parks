@@ -1,0 +1,25 @@
+.aboutus {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7)), url(../image/backgrounds/aboutus-background.jpg);
+    @extend %section;
+    padding: 60px;
+    background-size: cover;
+}
+.aboutus-heading {
+    font-size: 36px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.86px;
+    color: $white-color;
+}
+.aboutus-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.aboutus-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.65px;
+    text-align: center;
+    color: $white-color;
+}

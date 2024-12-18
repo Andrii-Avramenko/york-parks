@@ -33,4 +33,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.8px;
     color: $accent-color;
+
+    &::selection {
+        color: #06ae00;
+        background: rgba($color: #06ae00, $alpha: 0.2);
+    }
 }
