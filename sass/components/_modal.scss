@@ -56,10 +56,16 @@
 
 //form
 
-.form {
+.form-field {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border: none
+}
+.form-legend {
+    font-size: 20px;
+    text-align: center; 
+    color: $white-color
 }
 .form-item {
     display: flex;
@@ -74,11 +80,14 @@
     }
 }
 .form-tichead {
-    font-size: 24px;
+    font-size: 20px;
     color: $white-color;
     
 }
 .form-desc {
     font-size: 16px;
     color: #ccc;
+}
+.form-button {
+    @extend %button;
 }

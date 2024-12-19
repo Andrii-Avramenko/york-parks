@@ -58,29 +58,37 @@
         <div class="modal">
             <button type="button" class="close-button" data-modal-close></button>
             <h2 class="modal-heading">Buy Tickets</h2>
-            <ul class="form">
-                <li class="form-item">
-                    <input type="radio" class="form-input">
-                    <div class="form-text">
-                        <h2 class="form-tichead">Adult Ticket - £32</h2>
-                        <p class="form-desc">For over 16 years old</p>
+            <form class="form">
+                <fieldset class="form-field">
+                    <legend class="form-legend">Choose your ticket type:</legend>
+
+                    <div class="form-item">
+                        <input type="radio" id="adult-ticket" name="ticket" value="adult" class="form-input">
+                        <label for="adult-ticket" class="form-text">
+                            <h2 class="form-tichead">Adult Ticket - £32</h2>
+                            <p class="form-desc">For over 16 years old</p>
+                        </label>
                     </div>
-                </li>
-                <li class="form-item">
-                    <input type="radio" class="form-input">
-                    <div class="form-text">
-                        <h2 class="form-tichead">Children - £12</h2>
-                        <p class="form-desc">Under 15 years old. Children under 0.9m receive free entry</p>
+
+                    <div class="form-item">
+                        <input type="radio" id="children-ticket" name="ticket" value="children" class="form-input">
+                        <label for="children-ticket" class="form-text">
+                            <h2 class="form-tichead">Children - £12</h2>
+                            <p class="form-desc">Under 15 years old. Children under 0.9m receive free entry</p>
+                        </label>
                     </div>
-                </li>
-                <li class="form-item">
-                    <input type="radio" class="form-input">
-                    <div class="form-text">
-                        <h2 class="form-tichead">24 Hours Anytime Entry Adult - £52</h2>
-                        <p class="form-desc">Entry anytime in the day only for £52, over 16 years old only</p>
+
+                    <div class="form-item">
+                        <input type="radio" id="anytime-entry-adult" name="ticket" value="anytime-adult"
+                            class="form-input">
+                        <label for="anytime-entry-adult" class="form-text">
+                            <h2 class="form-tichead">24 Hours Anytime Entry Adult - £52</h2>
+                            <p class="form-desc">Entry anytime in the day only for £52, over 16 years old only</p>
+                        </label>
                     </div>
-                </li>
-            </ul>
+                    <button type="submit" class="form-button">Continue</button>
+                </fieldset>
+            </form>
         </div>
     </div>
     <script src="./js/signup.js"></script>
