@@ -251,6 +251,11 @@ img {
   display: flex;
   gap: 35px;
 }
+@media screen and (max-width: 480px) {
+  .header-list {
+    display: none;
+  }
+}
 
 .header-item a {
   color: #F9A825;

@@ -20,7 +20,9 @@
     display: flex;
     gap: 35px;
 
-    
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
 }
 .header-item a {
     color: $accent-color;
