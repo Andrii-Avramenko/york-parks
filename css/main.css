@@ -595,6 +595,18 @@ img {
   color: #fff;
 }
 
+.rides-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .restur {
   background-color: #555e53;
   padding: 70px 0;
